@@ -72,6 +72,10 @@
 .title {
     font-size: 17px;
 }
+.title p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .first-section .title {
     display: flex;
     justify-content: center;
@@ -91,6 +95,28 @@
     margin-left: 3%;
     margin-right: 3%;
 }
+
+.skills {
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+.skill-entries {
+    width:80%;
+}
+.skill-bar {
+    min-height: 20px;
+    background-color: gray;
+    margin-bottom: 5%;
+}
+.skill-bar .filler {
+    background-color: blue;
+    min-height: inherit;
+    position:relative;
+    height:inherit;
+}
+
 .contents .contact-list {
     display:block;
     align-items: center;
@@ -122,7 +148,6 @@
     font-size:16px;
 }
 .work-timeline .work-entry .entry-description{
-    font-size:12px;
+    font-size:13px;
 }
-
 /* main section */
