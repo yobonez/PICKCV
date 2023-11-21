@@ -1,15 +1,21 @@
 * {
     font-family: Lato-Normal;
 }
+
+/* misc section */
 .custom-hr {
     text-align: center;
-    background-color:gray;
+    background-color:blue;
 }
 .lb {
     font-family: Lato-Bold;
 }
+.material-icons {
+    color:blue;
+}
+/* misc section */
 
-
+/* header section */
 .header {
     width:100%;
     display: flex;
@@ -30,7 +36,7 @@
 .header-elem-avatar img {
     width: inherit;
     height: inherit;
-    border: 2px solid gray;
+    border: 2px solid blue;
     border-radius: 100%;
 }
 .header-elem-creds {
@@ -38,24 +44,51 @@
     max-width: 60%;
     font-size: 13px;
 }
+/* header section */
 
-.contents {
+
+/* main section */
+.main {
     display:flex;
-    margin-top: auto;
     width: 100%;
     height: 100%;
-    background-color: cadetblue;
+}
+.main-content {
+    display: flex;
+    align-items: start;
+}
+.main-content .first-section {
+    width:35%;
+    display:block;
+}
+.main-content .second-section {
+    width:65%;
+    display:block;
+}
+.main-content .custom-hr {
+    margin-top: 2%;
+}
+
+.title {
+    font-size: 17px;
 }
 .first-section .title {
-    background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .second-section .title {
-    background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.contents {
+    font-size:13px;
+}
+.contents p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+/* main section */
