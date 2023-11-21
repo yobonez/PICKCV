@@ -66,7 +66,7 @@
     display:block;
 }
 .main-content .custom-hr {
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .title {
@@ -91,4 +91,38 @@
     margin-left: 3%;
     margin-right: 3%;
 }
+.contents .contact-list {
+    display:block;
+    align-items: center;
+}
+
+.contents .contact-list p {
+    display:flex;
+    align-items: center;
+    font-size:8px;
+}
+
+.work-timeline {
+    display: block;
+}
+
+.work-timeline .work-entry {
+    display:block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.work-timeline .work-entry .entry-company{
+    display:flex;
+    justify-content: space-between;
+    font-size:12px;
+    color:gray;
+}
+.work-timeline .work-entry .entry-position{
+    letter-spacing: 3px;
+    font-size:16px;
+}
+.work-timeline .work-entry .entry-description{
+    font-size:12px;
+}
+
 /* main section */
