@@ -15,6 +15,7 @@
 }
 /* misc section */
 
+
 /* header section */
 .header {
     width:100%;
@@ -40,6 +41,7 @@
     border-radius: 100%;
 }
 .header-elem-creds {
+    display:block;
     width:inherit;
     max-width: 60%;
     font-size: 13px;
@@ -102,7 +104,7 @@
     justify-content: center;
     align-items: center;
 }
-.skill-entries {
+.skill-entries { 
     width:80%;
 }
 .skill-bar {
@@ -122,10 +124,21 @@
     align-items: center;
 }
 
-.contents .contact-list p {
+.contents .contact-list a {
     display:flex;
-    align-items: center;
+    align-items:center;
     font-size:8px;
+    color: black;
+    text-decoration: none;
+}
+
+.contents .contact-list a span, img {
+    margin-right: 3%;
+    font-size:16px;
+}
+.github-icon {
+    width:16px;
+    height:16px;
 }
 
 .work-timeline {
@@ -151,3 +164,81 @@
     font-size:13px;
 }
 /* main section */
+
+
+
+/* WIP wydzielenie częsci opcji z wybranych selektorów dla 
+użytkowników z większymi (szerszymi) ekranami, aka komputerami */
+
+@media only screen and (min-width:768px) {
+    .material-icons {
+        font-size:45px;
+    }
+    .header-content {
+        width:60%;
+    }
+    .header-elem-creds {
+        max-width: 30%;
+        font-size: 17px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .contents {
+        font-size:17px;
+    }
+    .contents .contact-list{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contents .contact-list a {
+        font-size:24px;
+        margin:1%;
+        width:90%;
+        justify-content: center;
+    }
+    .contents .contact-list a span, img {
+        margin-right: 3%;
+        font-size:50px;
+    }
+    .github-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .skills {
+        display:flex;
+        /* flex-direction: row; */
+        /* text-align:center;
+        justify-content: center;
+        align-items: center; */
+    }
+    .skill-entries {
+        display:flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width:85%;
+    }
+    .skill-bar {
+        min-height: 30px;
+        min-width: 200px;
+        background-color: gray;
+        margin-bottom: 5%;
+    }
+    .work-timeline .work-entry .entry-company{
+        /* display:flex;
+        justify-content: space-between; */
+        font-size:17px;
+        /* color:gray; */
+    }
+    .work-timeline .work-entry .entry-position{
+        /* letter-spacing: 3px; */
+        font-size:22px;
+    }
+    .work-timeline .work-entry .entry-description{
+        font-size:16px;
+    }
+}
+
+/* WIP wydzielenie częsci opcji z wybranych selektorów dla 
+użytkowników z większymi (szerszymi) ekranami, aka komputerami */
