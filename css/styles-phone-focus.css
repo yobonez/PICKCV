@@ -2,16 +2,37 @@
     font-family: Lato-Normal;
 }
 
+*:not(p) {
+    transition: ease all .3s;
+}
+
+/* accent */
+.custom-hr, .skill-bar .filler {
+    background-color: orange;
+}
+.material-icons, .header-elem-avatar img {
+    color: orange;
+}
+/* accent */
+
+
 /* misc section */
 .custom-hr {
     text-align: center;
-    background-color:blue;
+}
+.custom-hr#kreska1 {
+    width: 285%;
+    height: 2px;
+    border-radius: 40%;
+}
+
+.custom-hr#kreska2 {
+    height: 100%; 
+    width: 2px; 
+    border-radius: 40%;
 }
 .lb {
     font-family: Lato-Bold;
-}
-.material-icons {
-    color:blue;
 }
 /* misc section */
 
@@ -37,7 +58,7 @@
 .header-elem-avatar img {
     width: inherit;
     height: inherit;
-    border: 2px solid blue;
+    border: 2px solid;
     border-radius: 100%;
 }
 .header-elem-creds {
@@ -52,6 +73,7 @@
 /* main section */
 .main {
     display:flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
@@ -118,7 +140,6 @@
     margin-bottom: 5%;
 }
 .skill-bar .filler {
-    background-color: blue;
     min-height: inherit;
     position:relative;
     height:inherit;
@@ -172,23 +193,42 @@
 
 
 
-/* WIP wydzielenie częsci opcji z wybranych selektorów dla 
-użytkowników z większymi (szerszymi) ekranami, aka komputerami */
 
 @media only screen and (min-width:768px) {
+    *:not(p) {
+        transition: ease all .5s;
+    }
+    .custom-hr#kreska1 {
+        width: 95%;
+    }
+    .custom-hr#kreska2 {
+        /* no troche druciarstwo */
+        margin-top:-7%;
+        height: 120%; 
+        width: 2px; 
+        border-radius: 40%;
+    }
     .material-icons {
         font-size:45px;
     }
-    .header-content {
-        width:60%;
+    .header {
+        width: 35%;
     }
+    .header-content {
+        width:100%;
+    }
+    /* .header-elem-avatar {
+
+    } */
     .header-elem-creds {
-        max-width: 30%;
+        max-width: 50%;
         font-size: 17px;
     }
     .main-content .first-section {
         width:35%;
-        display:block;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
     .work-entry .custom-hr {
         height: 100px; 
@@ -196,6 +236,7 @@ użytkowników z większymi (szerszymi) ekranami, aka komputerami */
         border-radius: 40%;
     }
     .main-content .second-section {
+        margin-top: -7.5%;
         width:65%;
         display:block;
     }
@@ -264,7 +305,8 @@ użytkowników z większymi (szerszymi) ekranami, aka komputerami */
         align-items: center;
     }
     .work-timeline .work-entry .entry-company{
-        display: unset;
+        display: flex;
+        flex-direction: column-reverse;
         width:25%;
         font-size:17px;
         text-align:right;
@@ -284,6 +326,3 @@ użytkowników z większymi (szerszymi) ekranami, aka komputerami */
         width:75%;
     }
 }
-
-/* WIP wydzielenie częsci opcji z wybranych selektorów dla 
-użytkowników z większymi (szerszymi) ekranami, aka komputerami */
