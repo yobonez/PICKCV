@@ -1,0 +1,130 @@
+*:not(p) {
+    transition: ease all .5s;
+}
+.custom-hr#kreska1 {
+    width: 95%;
+}
+.custom-hr#kreska2 {
+    /* no troche druciarstwo */
+    margin-top:-7%;
+    height: 120%; 
+    width: 2px; 
+    border-radius: 40%;
+}
+.material-icons {
+    font-size:45px;
+}
+.header {
+    width: 35%;
+}
+.header-content {
+    width:100%;
+}
+/* .header-elem-avatar {
+
+} */
+.header-elem-creds {
+    max-width: 50%;
+    font-size: 17px;
+}
+.main-content .first-section {
+    width:35%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.work-entry .custom-hr {
+    height: 100px; 
+    width: 2px; 
+    border-radius: 40%;
+}
+.main-content .second-section {
+    margin-top: -7.5%;
+    width:65%;
+    display:block;
+}
+.title {
+    font-size: 30px;
+}
+.contents {
+    font-size:24px;
+}
+.contents p {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.contents .contact-list{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contents .contact-list a {
+    font-size:24px;
+    margin:1%;
+    width:90%;
+    justify-content: center;
+}
+.contents .contact-list a span, img {
+    margin-right: 3%;
+    font-size:50px;
+}
+.github-icon {
+    width: 50px;
+    height: 50px;
+}
+.skills {
+    display:flex;
+    /* flex-direction: row; */
+    /* text-align:center;
+    justify-content: center;
+    align-items: center; */
+}
+.skill-entries {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width:85%;
+}
+.skill-bar {
+    min-height: 30px;
+    min-width: 200px;
+    background-color: gray;
+    margin-bottom: 5%;
+}
+
+.work-timeline {
+    margin-left:3%;
+    margin-right:3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.work-timeline .work-entry {
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    align-items: center;
+}
+.work-timeline .work-entry .entry-company{
+    display: flex;
+    flex-direction: column-reverse;
+    width:25%;
+    font-size:17px;
+    text-align:right;
+    /* color:gray; */
+}
+.work-timeline .work-entry .entry-company p {
+    margin-right:9%;
+}
+.work-timeline .work-entry .entry-position{
+    /* letter-spacing: 3px; */
+    font-size:22px;
+}
+.work-timeline .work-entry .entry-description{
+    font-size:16px;
+}
+.work-timeline .work-entry .entry-contents {
+    width:75%;
+}
