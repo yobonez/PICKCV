@@ -83,6 +83,11 @@
     justify-content: center;
     align-items: center;
 }
+.work-entry .custom-hr {
+    height: 0; 
+    width: 0; 
+    /*border-radius: 40%;*/
+}
 .second-section .title {
     display: flex;
     justify-content: center;
@@ -181,11 +186,28 @@ użytkowników z większymi (szerszymi) ekranami, aka komputerami */
         max-width: 30%;
         font-size: 17px;
     }
+    .main-content .first-section {
+        width:35%;
+        display:block;
+    }
+    .work-entry .custom-hr {
+        height: 100px; 
+        width: 2px; 
+        border-radius: 40%;
+    }
+    .main-content .second-section {
+        width:65%;
+        display:block;
+    }
     .title {
         font-size: 30px;
     }
     .contents {
-        font-size:17px;
+        font-size:24px;
+    }
+    .contents p {
+        margin-left: 3%;
+        margin-right: 3%;
     }
     .contents .contact-list{
         display:flex;
@@ -225,11 +247,31 @@ użytkowników z większymi (szerszymi) ekranami, aka komputerami */
         background-color: gray;
         margin-bottom: 5%;
     }
+    
+    .work-timeline {
+        margin-left:3%;
+        margin-right:3%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .work-timeline .work-entry {
+        display: flex;
+        flex-direction: row;
+        width:50%;
+        align-items: center;
+    }
     .work-timeline .work-entry .entry-company{
-        /* display:flex;
-        justify-content: space-between; */
+        display: unset;
+        width:25%;
         font-size:17px;
+        text-align:right;
         /* color:gray; */
+    }
+    .work-timeline .work-entry .entry-company p {
+        margin-right:9%;
     }
     .work-timeline .work-entry .entry-position{
         /* letter-spacing: 3px; */
@@ -237,6 +279,9 @@ użytkowników z większymi (szerszymi) ekranami, aka komputerami */
     }
     .work-timeline .work-entry .entry-description{
         font-size:16px;
+    }
+    .work-timeline .work-entry .entry-contents {
+        width:75%;
     }
 }
 
