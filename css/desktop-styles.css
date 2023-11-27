@@ -10,6 +10,7 @@
     height: 120%; 
     width: 2px; 
     border-radius: 40%;
+    align-self: center;
 }
 .material-icons {
     font-size:45px;
@@ -27,11 +28,15 @@
     max-width: 50%;
     font-size: 17px;
 }
+.main {
+    max-width: 1920px;
+    margin-left:auto;
+    margin-right: auto;
+}
 .main-content .first-section {
     width:35%;
     display:flex;
     flex-direction: column;
-    align-items: center;
 }
 .work-entry .custom-hr {
     height: 100px; 
@@ -45,24 +50,24 @@
 }
 .title {
     font-size: 30px;
+    margin-left: 3%;
 }
 .contents {
     font-size:24px;
 }
 .contents p {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 .contents .contact-list{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 .contents .contact-list a {
     font-size:24px;
     margin:1%;
     width:90%;
-    justify-content: center;
 }
 .contents .contact-list a span, img {
     margin-right: 3%;
@@ -73,16 +78,15 @@
     height: 50px;
 }
 .skills {
-    display:flex;
+    display:block;
+    max-width: 50%;
     /* flex-direction: row; */
     /* text-align:center;
     justify-content: center;
     align-items: center; */
 }
 .skill-entries {
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display:block;
     width:85%;
 }
 .skill-bar {
@@ -127,4 +131,7 @@
 }
 .work-timeline .work-entry .entry-contents {
     width:75%;
+}
+.work-timeline .work-entry .entry-contents p {
+    margin-left: 3%;
 }

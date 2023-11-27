@@ -1,5 +1,5 @@
 @import url(mobile-styles.css);
-@import url(desktop-styles.css) only screen and (min-width:768px);
+@import url(desktop-styles.css) only screen and (min-width:1280px);
 
 
 /* import w media query coś nie działa, to użyłem tego wyżej, działa tak samo, ale w inny sposób */

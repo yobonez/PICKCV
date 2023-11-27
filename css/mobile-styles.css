@@ -7,11 +7,18 @@
 }
 
 /* accent */
+body {
+	background-color: #fdfdfd;
+	color: #393939;
+}
 .custom-hr, .skill-bar .filler {
     background-color: blueviolet;
 }
-.material-icons, .header-elem-avatar img {
+.material-icons {
     color: blueviolet;
+}
+.header-elem-avatar img {
+	color: #202020;
 }
 /* accent */
 
@@ -24,10 +31,12 @@
     width: 285%;
     height: 2px;
     border-radius: 40%;
+    margin-bottom: -1%;
 }
 
 .custom-hr#kreska2 {
-    height: 100%; 
+    height: 98%; 
+    margin-top: 2%;
     width: 2px; 
     border-radius: 40%;
 }
@@ -89,45 +98,44 @@
     width:65%;
     display:block;
 }
-.main-content .custom-hr {
-    margin-top: 1%;
-}
 
 .title {
-    font-size: 17px;
-}
-.title p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.first-section .title {
     display: flex;
-    justify-content: center;
+    /* justify-content: flex-start; */
     align-items: center;
+
+    font-size: 17px;
+    margin-left: 2%;
 }
+
+/* .first-section .title {
+    justify-content: flex-end;
+}
+.second-section .title {
+    justify-content: flex-start;
+} */
+
 .work-entry .custom-hr {
     height: 0; 
     width: 0; 
     /*border-radius: 40%;*/
 }
-.second-section .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .contents {
     font-size:13px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.contents p {
+.contents p, a {
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .skills {
     display:flex;
-    text-align:center;
+    text-align:left;
     justify-content: center;
     align-items: center;
 }
@@ -153,18 +161,19 @@
 .contents .contact-list a {
     display:flex;
     align-items:center;
-    font-size:8px;
-    color: black;
+    font-size:0.70em;
+    color: #393939;
     text-decoration: none;
+    margin-bottom:6%;
 }
 
 .contents .contact-list a span, img {
     margin-right: 3%;
-    font-size:16px;
+    font-size:15px;
 }
 .github-icon {
-    width:16px;
-    height:16px;
+    width:15px;
+    height:15px;
 }
 
 .work-timeline {
@@ -173,14 +182,13 @@
 
 .work-timeline .work-entry {
     display:block;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 .work-timeline .work-entry .entry-company{
     display:flex;
     justify-content: space-between;
     font-size:12px;
-    color:gray;
+    color:#555555;
 }
 .work-timeline .work-entry .entry-position{
     letter-spacing: 3px;
@@ -191,3 +199,30 @@
 }
 /* main section */
 
+@media only screen and (min-width:680px) {
+    .contents .contact-list a span, img {
+        margin-right: 3%;
+        font-size:18px;
+    }
+    .github-icon {
+        width:18px;
+        height:18px;
+    }
+    .contents .contact-list a {
+        font-size:1.20em;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .contents .contact-list a span, img {
+        margin-right: 3%;
+        font-size: 30px;
+    }
+    .github-icon {
+        width:30px;
+        height:30px;
+    }
+    .contents .contact-list a {
+        font-size:1.50em;
+    }
+}
